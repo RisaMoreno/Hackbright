@@ -1,8 +1,8 @@
 import players
 import monsters1
 
-playerhp = 10
-monsterhp = 10
+playerhp = 20
+monsterhp = 20
 
 playerdeath = False
 monsterdeath = False
