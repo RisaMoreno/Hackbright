@@ -7,6 +7,9 @@ monsterhp = 10
 playerdeath = False
 monsterdeath = False
 
+if raw_input="n":
+  quit()
+
 while playerhp > 0:
   if playerhp <= 0:
     playerdeath = True
