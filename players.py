@@ -1,5 +1,5 @@
 class Player(object):
-	def __init__(self, title, attack1, attack2, attack3):
+	def __init__(self, title, attackname1, attackname2, attackname3, attackpower1, attackpower2, attackpower3):
 		self.title = title
 		self.attackname1 = attackname1
 		self.attackname2 = attackname2
