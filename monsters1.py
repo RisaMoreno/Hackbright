@@ -12,3 +12,19 @@ monster_gryphon = Monster("Gryphon")
 from random import choice
 
 choice(Monster)
+
+def monster_damage(monsterhp):
+  global monsterhp
+  monsterhp = monsterhp - playerattack
+  return monsterhp
+  while monsterhp > 0:
+    if monsterhp <= 0:
+      monsterdeath = True
+    else:
+      #loop through player turn
+  if(monsterdeath):
+    end = raw_input("You have slain the beast! All hail! Play again y/n?" )
+    if end="n":
+      quit()
+    else:
+      #play again
