@@ -1,15 +1,43 @@
 class Player(object):
-	def __init__(self, title, attackname1, attackname2, attackname3, attackpower1, attackpower2, attackpower3):
+	def __init__(self, title):
 		self.title = title
-		self.attackname1 = attackname1
-		self.attackname2 = attackname2
-		self.attackname3 = attackname3
-		self.attackpower1 = attackpower1
-		self.attackpower2 = attackpower2
-		self.attackpower3 = attackpower3
+		if self.title == Wizard:
+			attacks = [{"casts a magic missile":1}, {"casts ray of frost":3}, {"casts lightning":5}]
+		if self.title == Fighter:
+			attacks = [{"slashes at":1}, {"stabs":3}, {"hacks a piece off of":5,}]
+		if self.title == Rogue:
+			attacks = [{"poison darts":1}, {"backstabs":3}, {"garrotes":5,}]
+		if self.title == Cleric:
+			attacks = [{"uses shadow aura":1}, {"casts psyche bolt":3}, {"uses soul drain":5}]
+		if self.title == Ranger:
+			attacks = [{"fires an arrow":1}, {"stabs":3}, {"a fire arrow":5}]
 
-player_wizard = Player("Wizard", "a magic missile", "ray of frost", "lightning", 1, 3, 5)
-player_fighter = Player("Fighter", "slashes at", "stabs", "hacks a piece off of", 1, 3, 5)
-player_rogue = Player("Rogue", "poison darts", "backstabs", "garrotes", 1, 3, 5)
-player_cleric = Player("Cleric", "shadow aura", "a psyche bolt", "soul drain", 1, 3, 5)
-player_ranger = Player("Ranger", "an arrow", "stabs", "a fire arrow", 1, 3, 5)
+player_wizard = Player("Wizard")
+player_fighter = Player("Fighter")
+player_rogue = Player("Rogue")
+player_cleric = Player("Cleric")
+player_ranger = Player("Ranger")
+
+def player_damage(playerhp):
+  global playerhp
+  playerhp = playerhp - monsterattack
+  return playerhp
+  while playerhp > 0:
+    if playerhp <= 0:
+      playerdeath = True
+    else:
+      #loop through monster turn
+  if(playerdeath):
+    end = raw_input("You have died! Play again y/n? ")
+    if end="n":
+      quit()
+    else:
+      #play again
+      
+ player_wizard = Player("Wizard")
+ 
+ #test in class file!
+      
+ print player_wizard = Player("Wizard")
+ 
+ 
