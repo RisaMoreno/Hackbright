@@ -20,7 +20,7 @@ fightingmonster = choice(Monster)
 #player turn - choose your attack
 playerattack = raw_input(pc "choose your attack!" attack1 attack2 attack3)
 #enter key
-#key = playerattack
+#value = playerattack
 #attack_chosen = player.attacks[key-1] ---> this should give you {"a magic missile":1}
 #print attack_chosen.keys()  --->that should get you "a magic missile"
 #print attack_chosen.get("a magic missile") --> 1
@@ -28,39 +28,11 @@ playerattack = raw_input(pc "choose your attack!" attack1 attack2 attack3)
 #monster turn - random attack key
 #key = monsterattack
 
-print "You attack " fightingmonster "with " """attack""" "for " """attackvalue""" damage. Ouch!"
+print pc """attack""" fightingmonster "for " """attackvalue""" damage. Ouch!"
   
-def monster_damage(monsterhp):
-  global monsterhp
-  monsterhp = monsterhp - playerattack
-  return monsterhp
-  while monsterhp > 0:
-    if monsterhp <= 0:
-      monsterdeath = True
-    else:
-      #loop through player turn
-  if(monsterdeath):
-    end = raw_input("You have slain the beast! All hail! Play again y/n?" )
-    if end="n":
-      quit()
-    else:
-      #play again
 
-def player_damage(playerhp):
-  global playerhp
-  playerhp = playerhp - monsterattack
-  return playerhp
-  while playerhp > 0:
-    if playerhp <= 0:
-      playerdeath = True
-    else:
-      #loop through monster turn
-  if(playerdeath):
-    end = raw_input("You have died! Play again y/n? ")
-    if end="n":
-      quit()
-    else:
-      #play again
+
+
 
 
     
