@@ -9,6 +9,10 @@ monster_hexenwulf = Monster("Hexenwulf")
 monster_dragon = Monster("Dragon")
 monster_gryphon = Monster("Gryphon")
 
+monsterhp = 20
+
+monsterdeath = False
+
 from random import choice
 
 choice(Monster)
