@@ -18,6 +18,10 @@ player_rogue = Player("Rogue")
 player_cleric = Player("Cleric")
 player_ranger = Player("Ranger")
 
+playerhp = 20
+
+playerdeath = False
+
 def player_damage(playerhp):
   global playerhp
   playerhp = playerhp - monsterattack
