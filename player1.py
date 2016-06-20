@@ -35,11 +35,11 @@ def player_damage(playerhp):
   			#loop through monster turn
     if(playerdeath):
         end = raw_input("You have died! Play again y/n? ")
-    if end == "n":
-        quit()
-    else:
-        print "play again"
-    #play again
+    	if end == "n":
+        	quit()
+    	else:
+        	print "play again"
+    			#play again
 
 player_wizard = Player("Wizard")
  
