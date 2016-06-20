@@ -31,7 +31,8 @@ def player_damage(playerhp):
         if playerhp <= 0:
             playerdeath = True
         else:
-            print "loop again"
+        	turn_count += 1
+        	print "loop again"
   			#loop through monster turn
     if(playerdeath):
         end = raw_input("You have died! Play again y/n? ")
