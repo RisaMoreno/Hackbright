@@ -22,10 +22,12 @@ def monster_damage(monsterhp):
 	monsterhp = monsterhp - playerattack
 	return monsterhp
 	while monsterhp > 0:
-  		print pc """attack""" fightingmonster "for " """attackvalue""" damage. Ouch!"
+  		#print pc """attack""" fightingmonster "for " """attackvalue""" damage. Ouch!"
   	if monsterhp <= 0:
     		monsterdeath = True
   	else:
+  		turn_count += 1
+  		print "Player's turn!"
 		#loop through player turn
 	if(monsterdeath):
 		end = raw_input("You have slain the beast! All hail! Play again y/n?" )
