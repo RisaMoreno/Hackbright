@@ -16,7 +16,7 @@ player1 = players.Player(pc)
 #pull player info from player class
 
 #player turn - choose your attack
-playerattack = raw_input(pc "choose your attack!" player1.tittle   attack1 attack2 attack3)
+playerattack = raw_input(pc "choose your attack!" player1.title attack1 attack2 attack3)
 #enter key
 #value = playerattack
 #attack_chosen = player.attacks[key-1] ---> this should give you {"a magic missile":1}
