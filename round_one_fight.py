@@ -1,4 +1,4 @@
-import players
+import player1
 import monsters1
 
 turn_count = 0
