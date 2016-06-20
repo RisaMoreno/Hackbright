@@ -8,10 +8,10 @@ if turn_count == %2:
   else:
     #monster turn
 
-pc = raw_input("What character do you want to play? \n Cleric \n Fighter \n Ranger \n Rogue \n Wizard")
+#pc = raw_input("What character do you want to play? \n Cleric \n Fighter \n Ranger \n Rogue \n Wizard")
+pc = Player("Wizard")
   
 player1 = players.Player(pc)
-#player_wizard = Player("Wizard", "a magic missile", "ray of frost", "lightning", 1, 3, 5)
   
 #pull player info from player class
 
