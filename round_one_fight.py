@@ -3,7 +3,7 @@ import monsters1
 
 turn_count = 0
 
-if turn_count = %2:
+if turn_count % 2:
   #player turn
   else:
     #monster turn
