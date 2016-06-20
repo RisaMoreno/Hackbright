@@ -18,23 +18,26 @@ player_rogue = Player("Rogue")
 player_cleric = Player("Cleric")
 player_ranger = Player("Ranger")
 
-playerhp = 20
+player_hp = 20
 
-playerdeath = False
+player_death = False
 
-def player_damage(playerhp):
+def player_attack():
+	player_attack = raw_input(pc "choose your attack!" player1.title attack1 attack2 attack3)
+
+def player_damage(player_hp):
     #global playerhp
-    playerhp = playerhp - monsterattack
+    player_hp = player_hp - monster_attack
     
-    while playerhp > 0:
+    while player_hp > 0:
     # print fightingmonster """attack""" pc "for " """attackvalue""" damage. Ouch!"
-        if playerhp <= 0:
-            playerdeath = True
+        if player_hp <= 0:
+            player_death = True
         else:
         	turn_count += 1
         	print "Monster's turn!"
   			#loop through monster turn
-    if(playerdeath):
+    if(player_death):
         end = raw_input("You have died! Play again y/n? ")
     	if end == "n":
         	quit()
