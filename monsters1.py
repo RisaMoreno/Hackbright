@@ -35,3 +35,5 @@ monster_wendigo = Monster("Wendigo")
 monster_hexenwulf = Monster("Hexenwulf")
 monster_dragon = Monster("Dragon")
 monster_gryphon = Monster("Gryphon")
+
+print monster_hellhound.title == Monster("Hellhound").title
