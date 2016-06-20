@@ -1,6 +1,13 @@
 import players
 import monsters1
 
+turn_count = 0
+
+if turn_count == %2:
+  #player turn
+  else:
+    #monster turn
+
 pc = raw_input("What character do you want to play? \n Cleric \n Fighter \n Ranger \n Rogue \n Wizard")
   
 player1 = players.Player(pc)
