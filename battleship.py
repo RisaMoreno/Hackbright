@@ -10,7 +10,7 @@ def print_board(board):
         print " ".join(row)
 
 print "Let's play Battleship!"
-print "Pick a number between 0 and 4. \n"
+print "Pick a number between 0 and 4."
 print_board(board)
 
 def random_row(board):
