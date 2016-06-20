@@ -1,6 +1,5 @@
 import players
 import monsters1
-from random import choice
 
 pc = raw_input("What character do you want to play? \n Cleric \n Fighter \n Ranger \n Rogue \n Wizard")
   
